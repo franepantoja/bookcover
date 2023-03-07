@@ -1,0 +1,118 @@
+
+.Book{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 600px;
+    width: 400px;
+    overflow:hidden;
+}
+
+
+.Background {
+    position: absolute;
+    top:0px;
+    left:0px;
+    animation: Slide 10s infinite linear;
+
+}
+
+@keyframes Slide {
+    0%   {left:0px;}
+    100% {left:-800px;}
+}
+
+.Character{
+    position: absolute;
+    top:30px;
+    z-index: 2;
+    animation: RockinAroundTheWisteriaTree 5s infinite linear;
+}
+
+@keyframes  RockinAroundTheWisteriaTree{
+    0%   {transform: scale(1.1) rotate(0deg);}
+    33%  {transform: scale(1.1) rotate(-2deg);}
+    66%  {transform: scale(1.1) rotate(2deg);}
+    100% {transform: scale(1.1) rotate(0deg);}
+}
+
+.logo{
+    position: absolute;
+    left: -215px;
+    top: -35px;
+    transform: scale(.7);
+    z-index: 1;
+
+}
+
+
+.title{
+    position: absolute;
+    top:50px;
+    left:27px;
+    font-size: 48px;
+    text-align: center;
+    font-family: "bely-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 1;
+    
+}
+  
+
+.subt{
+    position: absolute;
+    top:150px;
+    left:58.5px;
+    font-size: 10px;
+    color: brown;
+    font-family: 'Lato', sans-serif;
+    
+}
+  
+
+.suba{
+    position: absolute;
+    top:500px;
+    left:175px;
+    font-size: 10px;
+    color: brown;
+    z-index: 4;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+
+.author{
+    position: absolute;
+    left: 187px;
+    top: 515px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    z-index: 5;
+}
+
+.three{
+    position: absolute;
+    top: 0px;
+    left:0px;
+   z-index:3;
+}
+
+.three:hover{
+    animation: fade 1s forwards linear;
+}
+
+@keyframes fade {
+    0%   {opacity:100%}
+    100% {opacity:0%}
+
+}
+
+
+
+  
